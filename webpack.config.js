@@ -1,3 +1,4 @@
+//import webpack plugins
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const babelRules = {
@@ -11,15 +12,20 @@ const babelRules = {
 
 module.exports = {
 	output: {
-		filename: 'bundle.[contentHash].js',
+		filename: 'app.[contentHash].js',
 	},
 	module: {
 		rules: [babelRules],
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
-			title: 'Marketing website',
+			title: 'Learn webpack',
 			template: './public/index.html',
 		}),
 	],
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		compress: true,
+		port: 3000,
+	},
 };
