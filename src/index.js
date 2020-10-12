@@ -1,3 +1,5 @@
+//import react
+import React from 'react';
 //import render method
 import { render } from 'react-dom';
 //import app component
@@ -7,4 +9,4 @@ import { App } from './components/App';
 const root = document.getElementById('app');
 
 //render the app
-render('hey there', root);
+render(<App />, root);
