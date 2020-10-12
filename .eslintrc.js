@@ -13,7 +13,25 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'comma-spacing': [2, { before: false, after: true }],
+    'react/jsx-filename-extension': 0,
+    'react/destructuring-assignment': 0,
+    'array-bracket-spacing': 2,
+    'arrow-body-style': 0,
+    'block-scoped-var': 2,
+    'brace-style': [
+      2,
+      '1tbs',
+      {
+        allowSingleLine: true,
+      },
+    ],
+    'comma-spacing': [
+      2,
+      {
+        before: false,
+        after: true,
+      },
+    ],
     'comma-style': [2, 'last'],
     complexity: 0,
     'consistent-return': 1,
@@ -29,15 +47,33 @@ module.exports = {
     'generator-star-spacing': [2, 'both'],
     'guard-for-in': 0,
     'handle-callback-err': [2, '^(err|error|anySpecificError)$'],
-    indent: [2, 2, { SwitchCase: 1 }],
-    'key-spacing': [2, { beforeColon: false, afterColon: true }],
+    indent: [
+      2,
+      2,
+      {
+        SwitchCase: 1,
+      },
+    ],
+    'key-spacing': [
+      2,
+      {
+        beforeColon: false,
+        afterColon: true,
+      },
+    ],
     'linebreak-style': 0,
     'max-depth': 0,
     'max-len': [2, 1550, 4],
     'max-nested-callbacks': 0,
     'max-params': 0,
     'max-statements': 0,
-    'new-cap': [2, { newIsCap: true, capIsNew: false }],
+    'new-cap': [
+      2,
+      {
+        newIsCap: true,
+        capIsNew: false,
+      },
+    ],
     'newline-after-var': [0, 'never'],
     'new-parens': 2,
     'no-alert': 0,
@@ -86,7 +122,12 @@ module.exports = {
     'no-mixed-spaces-and-tabs': [2, false],
     'no-multi-spaces': 2,
     'no-multi-str': 0,
-    'no-multiple-empty-lines': [2, { max: 1 }],
+    'no-multiple-empty-lines': [
+      2,
+      {
+        max: 1,
+      },
+    ],
     'no-native-reassign': 2,
     'no-negated-in-lhs': 2,
     'no-nested-ternary': 0,
@@ -125,7 +166,13 @@ module.exports = {
     'no-unneeded-ternary': 2,
     'no-unreachable': 2,
     'no-unused-expressions': 0,
-    'no-unused-vars': [2, { vars: 'all', args: 'none' }],
+    'no-unused-vars': [
+      2,
+      {
+        vars: 'all',
+        args: 'none',
+      },
+    ],
     'no-var': 2,
     'no-void': 0,
     'no-warning-comments': 0,
@@ -140,7 +187,7 @@ module.exports = {
     'quote-props': 0,
     quotes: [2, 'single', 'avoid-escape'],
     radix: 2,
-    'jsx-quotes': [2, 'prefer-single'],
+    'jsx-quotes': [2, 'prefer-double'],
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'jsx-a11y/media-has-caption': 0,
@@ -150,7 +197,12 @@ module.exports = {
     'react/jsx-curly-spacing': [2, 'never'],
     'react/jsx-equals-spacing': [2, 'never'],
     'react/jsx-indent-props': [2, 2],
-    'react/jsx-no-bind': [2, { allowArrowFunctions: true }],
+    'react/jsx-no-bind': [
+      2,
+      {
+        allowArrowFunctions: true,
+      },
+    ],
     'react/jsx-no-undef': 2,
     'react/jsx-pascal-case': 2,
     'react/jsx-sort-prop-types': 0,
@@ -172,11 +224,23 @@ module.exports = {
     'semi-spacing': 0,
     'sort-vars': 0,
     'space-before-blocks': [2, 'always'],
-    'space-before-function-paren': [2, { anonymous: 'always', named: 'never' }],
+    'space-before-function-paren': [
+      2,
+      {
+        anonymous: 'always',
+        named: 'never',
+      },
+    ],
     'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
     'keyword-spacing': 2,
-    'space-unary-ops': [2, { words: true, nonwords: false }],
+    'space-unary-ops': [
+      2,
+      {
+        words: true,
+        nonwords: false,
+      },
+    ],
     'spaced-comment': [0, 'always'],
     strict: 0,
     'use-isnan': 2,

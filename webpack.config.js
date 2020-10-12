@@ -2,12 +2,13 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const babelRules = {
-  test: /\.js$/,
+  test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
 };
 
 module.exports = {
+  entry: './src/index.js',
   output: {
     filename: 'app.[contentHash].js',
   },

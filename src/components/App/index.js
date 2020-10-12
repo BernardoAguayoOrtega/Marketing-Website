@@ -2,4 +2,10 @@
 import React from 'react';
 
 //create and export app component
-export const App = () => <h3>I'm the app component</h3>;
+export default function App() {
+  return (
+    <>
+      <h1>Im the app component</h1>
+    </>
+  );
+}
