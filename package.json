@@ -1,0 +1,25 @@
+{
+  "name": "marketing-website",
+  "version": "1.0.0",
+  "description": "marketing website for a new tech product",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/Marketing-Website.git"
+  },
+  "keywords": [
+    "react.js",
+    "test",
+    "webpack",
+    "babel"
+  ],
+  "author": "Bernardo Aguayo Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/Marketing-Website/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/Marketing-Website#readme"
+}
