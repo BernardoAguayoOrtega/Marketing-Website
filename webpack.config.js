@@ -19,7 +19,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
-			title: 'Learn webpack',
+			title: 'marketing site',
 			template: './public/index.html',
 		}),
 	],
