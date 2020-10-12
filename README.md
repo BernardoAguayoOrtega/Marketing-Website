@@ -1,4 +1,4 @@
-# Marketing Website :heavy_heart_exclamation_mark_ornament:
+# Marketing Website :heart:
 
 Marketing website creating for technology product, this web is online for practice propuse
 
