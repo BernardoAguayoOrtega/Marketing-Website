@@ -47,5 +47,10 @@
 	"dependencies": {
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1"
+	},
+	"jest": {
+		"setupFilesAfterEnv": [
+			"<rootDir>./src/__tests__/setupTest.js"
+		]
 	}
 }
