@@ -2,7 +2,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const babelRules = {
-  test: /\.(js|jsx)$/,
+  test: /\.(js)$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
 };
