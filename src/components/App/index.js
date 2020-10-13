@@ -1,6 +1,8 @@
 /* eslint-disable react/button-has-type */
 //import react
 import React from 'react';
+//import styles
+import '../styles/app.css';
 
 //create and export app component
 export default function App() {

@@ -12,8 +12,4 @@ describe('<App />', () => {
   test('rendering', () => {
     expect(app.length).toEqual(1);
   });
-
-  test('app text', () => {
-    expect(app.text()).toEqual('Im the app component');
-  });
 });
