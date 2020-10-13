@@ -1,6 +1,11 @@
 //import webpack plugins
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
+const cssRules = {
+  test: /\.css$/i,
+  use: ['style-loader', 'css-loader'],
+};
+
 const babelRules = {
   test: /\.(js)$/,
   exclude: /node_modules/,
@@ -13,7 +18,7 @@ module.exports = {
     filename: 'app.[contentHash].js',
   },
   module: {
-    rules: [babelRules],
+    rules: [babelRules, cssRules],
   },
   plugins: [
     new HtmlWebPackPlugin({
