@@ -9,7 +9,13 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "format": "pretty-quick"
+    "format": "pretty-quick",
+    "lint": "eslint ./"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick && npm run lint"
+    }
   },
   "repository": {
     "type": "git",
@@ -62,7 +68,7 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "<rootDir>./src/setupTest.js"
+      "<rootDir>./setupTest.js"
     ],
     "moduleNameMapper": {
       "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
